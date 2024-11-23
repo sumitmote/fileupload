@@ -3,19 +3,16 @@ package com.javatechie.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 
 
-@Entity
-@Table(name = "ImageData")
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
+@Entity
+@Data
+@Table(name = "ImageData")
 public class ImageData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
